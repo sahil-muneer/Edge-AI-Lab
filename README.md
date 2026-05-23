@@ -31,3 +31,11 @@ A self-healing architecture. If the primary Python machine learning server goes 
 ```bash
 npm install
 npm run dev
+
+### 2. Start the Python ML Server
+Open a second terminal and initialize the backend engine:
+
+```bash
+cd backend
+pip install fastapi uvicorn numpy scikit-learn
+python -m uvicorn main:app --reload
